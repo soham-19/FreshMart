@@ -1,0 +1,62 @@
+<% layout("/layouts/boilerplate") %>
+
+    <body>
+        <div class="row">
+            <div class="col-8 offset-2">
+                <br><br>
+                <h3>Create a new Bascket/h3>
+                <form class="form-group" action="/listings" method="POST">
+
+                    <div class="mb-3">
+                        <label for="title" class="form-label">Title: </label>
+                        <input class="form-control" name="listing[title]" placeholder="Add a catchy title" type = " text">
+                    </div>
+
+                    <br><br>
+
+                    <div class="mb-3">
+                        <label for="descrip tion" class="form-label">Description : </label>
+                        <textarea name="listing[description]" class="form-control"> </textarea>
+                    </div>
+
+                    <br><br>
+
+                    <div class="mb-3"> 
+                        <label for="image" class="form-label">Image : </label>
+                        <input class="form-control" name="listing[image]" placeholder="Enter Image URL/Link" type="text">
+                    </div>
+
+                    <br><br>
+
+                    <div class="mb-3">
+                        <label for="price" class="form-label">Price : </label>
+                        <input class="form-control" name="listing[price]" placeholder="Enter Price" type = "number">
+                    </div>
+
+
+                    <br><br>
+
+                    <div class="row">
+                        <div class="mb-3 col-md-8">
+                            <label for="location" class="form-label">Location : </label>
+                            <input class="form-control" name="listing[location]" placeholder="Enter Location" type = "text">
+                        </div>
+
+                        <br><br>
+
+                        <div class="mb-3 col-md-4">
+                            <label for="country" class="form-label">Country : </label>
+                            <input class="form-control" name="listing[country]" placeholder="Enter Country" type = "text">
+                        </div>
+
+                    </div>
+
+
+                    <br><br>
+
+                    <button class="add-btn btn btn-dark mb-3">Add</button>
+
+                </form>
+            </div>
+        </div>
+    </body>
